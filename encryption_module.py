@@ -19,3 +19,5 @@ def encode(plain_text,opt_letters,alphabet_to_number,number_to_alphabet):
 
 
     return ''.join(ciphertext)
+
+
