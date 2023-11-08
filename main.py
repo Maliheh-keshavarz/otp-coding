@@ -1,6 +1,7 @@
 
 from otp_generator import otp
 from encryption_module import encode
+from decryption_module import decode
 
 
 def main():
@@ -23,6 +24,8 @@ def main():
     ciphertext = encode(plain_text,opt_letters,alphabet_to_number,number_to_alphabet)
     print(f"Encrypted Text (Ciphertext): {ciphertext}")
 
+    decoded_text = decode(ciphertext, opt_letters, alphabet_to_number, number_to_alphabet)
+    print(f"Decrypted Text (Plain Text): {decoded_text}")
 
 
 if __name__ == "__main__":
