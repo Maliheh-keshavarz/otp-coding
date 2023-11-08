@@ -16,6 +16,8 @@ def main():
     
     
 
+    opt_letters= otp(plain_text,number_to_alphabet)
+    print("OTP:", opt_letters)
 
 
 
