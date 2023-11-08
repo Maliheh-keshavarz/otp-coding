@@ -6,6 +6,17 @@ from decryption_module import decode
 
 def main():
 
+    """
+    Main function for encrypting and decrypting plain text using a one-time pad (OTP).
+
+    This code takes user input for a plain text message and performs the following steps:
+        1. Generates a one-time pad (OTP) consisting of random letters.
+        2. Encrypts the plain text message using the OTP.
+        3. Decrypts the ciphertext back to the original plain text.
+
+ 
+    """
+
     alphabet_to_number = {chr(97 + i): i for i in range(26)}
     number_to_alphabet = {i: chr(97 + i) for i in range(26)}
     # number_to_alphabet = {val: k for k, val in alphabet_to_number.items()}  

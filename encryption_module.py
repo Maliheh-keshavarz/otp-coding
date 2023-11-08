@@ -1,6 +1,27 @@
 
 
 def encode(plain_text,opt_letters,alphabet_to_number,number_to_alphabet):
+    """
+    Encrypts plain text using a one-time pad (OTP).
+
+    This function takes a plain text message, a list of one-time pad (OTP) letters, and dictionaries for mapping
+    between alphabet letters and numbers. It encrypts the plain text message using the OTP.
+
+    Parameters:
+        plain_text (str): The plain text message to be encrypted.
+        opt_letters (list of str): A list of OTP letters for encryption.
+        alphabet_to_number (dict): A dictionary mapping alphabet letters to numbers.
+        number_to_alphabet (dict): A dictionary mapping numbers to alphabet letters.
+
+    Returns:
+        str: The encrypted ciphertext.
+    
+    Raises:
+        ValueError: If the length of the plain text and OTP letters do not match.
+    """
+
+
+
     initial_total = []
     ciphertext = []
 
