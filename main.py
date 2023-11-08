@@ -1,6 +1,6 @@
 
 from otp_generator import otp
-
+from encryption_module import encode
 
 
 def main():
@@ -19,6 +19,9 @@ def main():
     opt_letters= otp(plain_text,number_to_alphabet)
     print("OTP:", opt_letters)
 
+
+    ciphertext = encode(plain_text,opt_letters,alphabet_to_number,number_to_alphabet)
+    print(f"Encrypted Text (Ciphertext): {ciphertext}")
 
 
 
